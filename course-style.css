@@ -1,0 +1,1049 @@
+/* =========================================================
+   CADD CENTRE VADAPALANI
+   MECHANICAL COURSE PAGE
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   BODY
+========================================================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #F8F9FC;
+    color: #252A34;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    background: linear-gradient(
+        90deg,
+        #E7617C,
+        #CC4259
+    );
+
+    color: #FFFFFF;
+
+    padding: 13px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    min-height: 62px;
+}
+
+
+/* =========================================================
+   LOGO / INSTITUTE NAME
+========================================================= */
+
+.logo {
+
+    font-size: 20px;
+
+    font-weight: 700;
+
+    color: #FFFFFF;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   BACK HOME BUTTON
+========================================================= */
+
+.header a {
+
+    color: #FFFFFF;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    padding: 7px 14px;
+
+    border: 1px solid rgba(
+        255,
+        255,
+        255,
+        0.55
+    );
+
+    border-radius: 7px;
+
+    transition: all 0.3s ease;
+}
+
+
+.header a:hover {
+
+    background: rgba(
+        255,
+        255,
+        255,
+        0.16
+    );
+
+    transform: translateY(-1px);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    background:
+
+        radial-gradient(
+            circle at 100% 50%,
+            rgba(
+                217,
+                79,
+                104,
+                0.10
+            ),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            145deg,
+            #FFF0F3,
+            #F2EFF6,
+            #FFF0F3
+        );
+
+    text-align: center;
+
+    padding: 58px 20px 50px;
+}
+
+
+/* =========================================================
+   HERO SMALL TITLE
+========================================================= */
+
+.small-title {
+
+    color: #BF4B61;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin-bottom: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.hero h1 {
+
+    font-size: 40px;
+
+    font-weight: 700;
+
+    color: #252A34;
+
+    margin-bottom: 13px;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.hero p {
+
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: #5F6774;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COURSE SECTION
+========================================================= */
+
+.course-section {
+
+    max-width: 1250px;
+
+    margin: 0 auto;
+
+    padding: 60px 25px 80px;
+
+    background: transparent;
+}
+
+
+/* =========================================================
+   TOPIC SECTION
+========================================================= */
+
+.topic-section {
+
+    margin-bottom: 65px;
+}
+
+
+/* =========================================================
+   TOPIC HEADING
+========================================================= */
+
+.topic-heading {
+
+    position: relative;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+    color: #252A34;
+
+    margin-bottom: 30px;
+
+    padding-left: 18px;
+}
+
+
+/* =========================================================
+   TOPIC HEADING RED LINE
+========================================================= */
+
+.topic-heading::before {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    top: 4px;
+
+    width: 5px;
+
+    height: 33px;
+
+    background: linear-gradient(
+        180deg,
+        #D94F68,
+        #E87588
+    );
+
+    border-radius: 10px;
+}
+
+
+/* =========================================================
+   COURSE GRID
+========================================================= */
+
+.course-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(
+        3,
+        minmax(0, 1fr)
+    );
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   COURSE CARD
+========================================================= */
+
+.course-box {
+
+    background: #FFFFFF;
+
+    padding: 30px;
+
+    border-radius: 16px;
+
+    border: 1px solid #E1E3E8;
+
+    box-shadow:
+        0 8px 25px
+        rgba(
+            65,
+            70,
+            90,
+            0.07
+        );
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    display: flex;
+
+    flex-direction: column;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   COURSE CARD HOVER
+========================================================= */
+
+.course-box:hover {
+
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 16px 35px
+        rgba(
+            94,
+            101,
+            127,
+            0.13
+        );
+}
+
+
+/* =========================================================
+   SOFTWARE LOGO CONTAINER
+========================================================= */
+
+.course-box .icon {
+
+    width: 68px;
+
+    height: 68px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #E7E9EF;
+
+    border-radius: 14px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 8px;
+
+    margin-bottom: 20px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 5px 15px
+        rgba(
+            65,
+            70,
+            90,
+            0.06
+        );
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SOFTWARE LOGO IMAGE
+
+   THIS IS THE IMPORTANT PART
+========================================================= */
+
+.course-box .software-logo {
+
+    width: 100%;
+
+    height: 100%;
+
+    max-width: 52px;
+
+    max-height: 52px;
+
+    object-fit: contain;
+
+    object-position: center;
+
+    display: block;
+
+    transition:
+        transform 0.25s ease;
+}
+
+
+/* =========================================================
+   LOGO HOVER
+========================================================= */
+
+.course-box:hover .software-logo {
+
+    transform: scale(1.06);
+}
+
+
+/* =========================================================
+   COURSE TITLE
+========================================================= */
+
+.course-box h3 {
+
+    font-size: 21px;
+
+    font-weight: 700;
+
+    color: #252A34;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   COURSE DESCRIPTION
+========================================================= */
+
+.course-box p {
+
+    color: #697586;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    margin-bottom: 18px;
+}
+
+
+/* =========================================================
+   COURSE LIST
+========================================================= */
+
+.course-box ul {
+
+    padding-left: 20px;
+
+    margin-bottom: 25px;
+
+    color: #555F6F;
+
+    font-size: 14px;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   LIST BULLET
+========================================================= */
+
+.course-box li::marker {
+
+    color: #D94F68;
+}
+
+
+/* =========================================================
+   SYLLABUS BUTTON AREA
+========================================================= */
+
+.syllabus-buttons {
+
+   margin-top: 20px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   SYLLABUS BUTTON
+========================================================= */
+
+.syllabus-btn {
+
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 12px 13px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    border: 1px solid transparent;
+
+    transition:
+        transform 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+/* =========================================================
+   ESSENTIAL SYLLABUS
+========================================================= */
+
+.syllabus-btn.essential {
+
+    background: #FFF1F4;
+
+    border-color: #F4CCD5;
+
+    color: #BF4B61;
+}
+
+
+.syllabus-btn.essential:hover {
+
+    background: #FFE5EB;
+
+    transform: translateX(3px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(
+            217,
+            79,
+            104,
+            0.10
+        );
+}
+
+
+/* =========================================================
+   PROFICIENT SYLLABUS
+========================================================= */
+
+.syllabus-btn.proficient {
+
+    background: #EEF5FF;
+
+    border-color: #D5E4F7;
+
+    color: #5479A8;
+}
+
+
+.syllabus-btn.proficient:hover {
+
+    background: #E2EEFC;
+
+    transform: translateX(3px);
+
+    box-shadow:
+        0 5px 12px
+        rgba(
+            84,
+            121,
+            168,
+            0.10
+        );
+}
+
+
+/* =========================================================
+   PDF ICON
+========================================================= */
+
+.pdf-icon {
+
+    width: 34px;
+
+    height: 34px;
+
+    min-width: 34px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #FFFFFF;
+
+    border-radius: 7px;
+
+    font-size: 17px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   SYLLABUS TEXT
+========================================================= */
+
+.syllabus-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    flex: 1;
+
+    gap: 2px;
+
+    min-width: 0;
+}
+
+
+/* =========================================================
+   SYLLABUS TITLE
+========================================================= */
+
+.syllabus-text strong {
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SYLLABUS SUBTITLE
+========================================================= */
+
+.syllabus-text small {
+
+    font-size: 10px;
+
+    opacity: 0.7;
+
+    line-height: 1.3;
+}
+
+
+/* =========================================================
+   SYLLABUS ARROW
+========================================================= */
+
+.syllabus-arrow {
+
+    font-size: 20px;
+
+    font-weight: 600;
+
+    line-height: 1;
+
+    margin-left: auto;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================================================
+   ENQUIRY SECTION
+========================================================= */
+
+.enquiry {
+
+    background: linear-gradient(
+        90deg,
+        #C94B63,
+        #DE6A7D
+    );
+
+    color: #FFFFFF;
+
+    text-align: center;
+
+    padding: 45px 20px;
+}
+
+
+/* =========================================================
+   ENQUIRY TITLE
+========================================================= */
+
+.enquiry h2 {
+
+    font-size: 27px;
+
+    font-weight: 700;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   ENQUIRY DESCRIPTION
+========================================================= */
+
+.enquiry p {
+
+    font-size: 15px;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   ENQUIRY BUTTON
+========================================================= */
+
+.enquiry-btn {
+
+    display: inline-block;
+
+    background: #FFFFFF;
+
+    color: #C94B63;
+
+    text-decoration: none;
+
+    padding: 12px 26px;
+
+    border-radius: 7px;
+
+    font-weight: 700;
+
+    transition: all 0.3s ease;
+}
+
+
+.enquiry-btn:hover {
+
+    background: #FFF1F4;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    background: #DDE3EC;
+
+    color: #4E5562;
+
+    text-align: center;
+
+    padding: 18px;
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+    .course-grid {
+
+        grid-template-columns: repeat(
+            2,
+            minmax(0, 1fr)
+        );
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+
+    /* =========================
+       HEADER
+    ========================= */
+
+    .header {
+
+        padding: 12px 18px;
+
+        min-height: 56px;
+    }
+
+
+    .logo {
+
+        font-size: 17px;
+    }
+
+
+    .header a {
+
+        font-size: 11px;
+
+        padding: 7px 10px;
+    }
+
+
+    /* =========================
+       HERO
+    ========================= */
+
+    .hero {
+
+        padding: 45px 20px 38px;
+    }
+
+
+    .small-title {
+
+        font-size: 11px;
+
+        margin-bottom: 8px;
+    }
+
+
+    .hero h1 {
+
+        font-size: 29px;
+
+        margin-bottom: 10px;
+    }
+
+
+    .hero p {
+
+        font-size: 13px;
+
+        line-height: 1.6;
+    }
+
+
+    /* =========================
+       COURSE SECTION
+    ========================= */
+
+    .course-section {
+
+        padding: 45px 18px 60px;
+    }
+
+
+    .topic-section {
+
+        margin-bottom: 50px;
+    }
+
+
+    /* =========================
+       TOPIC HEADING
+    ========================= */
+
+    .topic-heading {
+
+        font-size: 23px;
+
+        margin-bottom: 22px;
+
+        padding-left: 15px;
+    }
+
+
+    .topic-heading::before {
+
+        width: 4px;
+
+        height: 28px;
+
+        top: 3px;
+    }
+
+
+    /* =========================
+       COURSE GRID
+    ========================= */
+
+    .course-grid {
+
+        grid-template-columns: 1fr;
+
+        gap: 18px;
+    }
+
+
+    /* =========================
+       COURSE CARD
+    ========================= */
+
+    .course-box {
+
+        padding: 24px;
+    }
+
+
+    /* =========================
+       MOBILE LOGO BOX
+    ========================= */
+
+    .course-box .icon {
+
+        width: 58px;
+
+        height: 58px;
+
+        padding: 7px;
+
+        margin-bottom: 16px;
+
+        border-radius: 12px;
+    }
+
+
+    .course-box .software-logo {
+
+        max-width: 45px;
+
+        max-height: 45px;
+    }
+
+
+    /* =========================
+       COURSE TITLE
+    ========================= */
+
+    .course-box h3 {
+
+        font-size: 19px;
+    }
+
+
+    /* =========================
+       COURSE DESCRIPTION
+    ========================= */
+
+    .course-box p {
+
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       COURSE LIST
+    ========================= */
+
+    .course-box ul {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+
+    /* =========================
+       SYLLABUS BUTTON
+    ========================= */
+
+    .syllabus-btn {
+
+        padding: 11px 12px;
+    }
+
+
+    /* =========================
+       PDF ICON
+    ========================= */
+
+    .pdf-icon {
+
+        width: 32px;
+
+        height: 32px;
+
+        min-width: 32px;
+
+        font-size: 16px;
+    }
+
+
+    /* =========================
+       ENQUIRY
+    ========================= */
+
+    .enquiry {
+
+        padding: 40px 20px;
+    }
+
+
+    .enquiry h2 {
+
+        font-size: 22px;
+    }
+
+
+    .enquiry p {
+
+        font-size: 13px;
+    }
+
+
+    /* =========================
+       FOOTER
+    ========================= */
+
+    footer {
+
+        font-size: 12px;
+
+        padding: 16px;
+    }
+
+}
